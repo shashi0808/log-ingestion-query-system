@@ -1,0 +1,102 @@
+[
+  {
+    "level": "info",
+    "message": "Application started successfully",
+    "resourceId": "server-1",
+    "timestamp": "2024-01-24T10:00:00Z",
+    "traceId": "trace-abc123",
+    "spanId": "span-001",
+    "commit": "abc123def456",
+    "metadata": {
+      "environment": "production",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Failed to connect to database",
+    "resourceId": "server-1",
+    "timestamp": "2024-01-24T10:05:00Z",
+    "traceId": "trace-abc123",
+    "spanId": "span-002",
+    "commit": "abc123def456",
+    "metadata": {
+      "errorCode": "DB_CONN_ERR",
+      "retryCount": 3
+    }
+  },
+  {
+    "level": "warn",
+    "message": "High memory usage detected",
+    "resourceId": "server-2",
+    "timestamp": "2024-01-24T10:10:00Z",
+    "traceId": "trace-xyz789",
+    "spanId": "span-003",
+    "commit": "def456ghi789",
+    "metadata": {
+      "memoryUsage": "85%",
+      "threshold": "80%"
+    }
+  },
+  {
+    "level": "info",
+    "message": "User authentication successful",
+    "resourceId": "auth-service",
+    "timestamp": "2024-01-24T10:15:00Z",
+    "traceId": "trace-usr001",
+    "spanId": "span-004",
+    "commit": "abc123def456",
+    "metadata": {
+      "userId": "user-123",
+      "method": "oauth"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Processing request",
+    "resourceId": "api-gateway",
+    "timestamp": "2024-01-24T10:20:00Z",
+    "traceId": "trace-req001",
+    "spanId": "span-005",
+    "commit": "def456ghi789",
+    "metadata": {
+      "endpoint": "/api/users",
+      "method": "GET"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Payment processing failed",
+    "resourceId": "payment-service",
+    "timestamp": "2024-01-24T10:25:00Z",
+    "traceId": "trace-pay001",
+    "spanId": "span-006",
+    "commit": "abc123def456",
+    "metadata": {
+      "paymentId": "pay-456",
+      "reason": "insufficient_funds"
+    }
+  },
+  {
+    "level": "info",
+    "message": "Cache hit for user data",
+    "resourceId": "cache-service",
+    "timestamp": "2024-01-24T10:30:00Z",
+    "traceId": "trace-cache001",
+    "spanId": "span-007",
+    "commit": "def456ghi789"
+  },
+  {
+    "level": "warn",
+    "message": "Slow query detected",
+    "resourceId": "database-1",
+    "timestamp": "2024-01-24T10:35:00Z",
+    "traceId": "trace-db001",
+    "spanId": "span-008",
+    "commit": "abc123def456",
+    "metadata": {
+      "queryTime": "2.5s",
+      "threshold": "1s"
+    }
+  }
+]
